@@ -20,8 +20,8 @@ public class Order {
     public Order() {
     }
 
-    public Order(Date moment, OrderStatus status, Client client) {
-        this.moment = moment;
+    public Order(OrderStatus status, Client client) {
+        moment = new Date();
         this.status = status;
         this.client = client;
     }

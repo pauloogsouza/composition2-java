@@ -32,7 +32,7 @@ public class Program {
         System.out.print("How many items for this order? ");
         int n = sc.nextInt();
 
-        Order order = new Order(new Date(), status, new Client(name, email, birthDate));
+        Order order = new Order(status, new Client(name, email, birthDate));
 
         for (int i=1; i<=n; i++) {
             System.out.println("Enter #" + i + " item data:");
